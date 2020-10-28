@@ -1,0 +1,52 @@
+How many test in Smoke test and is it for entire application or module or user stories
+Can you run code without main method
+
+
+US 1
+AC #6
+As a User I should be able to add mention by clicking on the Add mention icon and select contacts from the lists provided in dropdown
+
+TC1
+As a User I should be able to add mention by clicking on the Add mention icon and select contacts from the lists provided in dropdown under "Recent"
+
+
+Given I'm on the user home page on Bitrix24 application
+When I click on "send message" field
+And I click on "Add mention" icon
+And I choose conctacts from dropdown under "Recent"
+Then I should be able to add them to message as a mentions
+
+TC2
+As a User I should be able to add mention by clicking on the Add mention icon and select contacts from the lists provided in dropdown under "Employees and departments"
+
+
+Given I'm on the user home page on Bitrix24 application
+When I click on "send message" field
+And I click on "Add mention" icon
+And I click on "Employees and departments"
+And I choose conctacts  from dropdown under "Employees and departments"
+Then I should be able to add them to message as a mentions
+
+
+US 2
+AC #10
+User can click on More to specify the task details
+
+Given I'm on the user home page on Bitrix24 application
+When I click on "Tasks" 
+And I click on "More" button
+Then I should be able to specify the task details
+
+
+
+
+US 3
+AC #5
+User should be able to create a quote by clicking on the Comma icon
+
+Given I'm on the user home page on Bitrix24 application
+When I click on "EVENT" 
+And I click on on the Comma icon
+Then I should be able to create a quote
+
+
